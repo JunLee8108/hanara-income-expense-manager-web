@@ -15,8 +15,47 @@ import image3 from "../../assets/3.webp";
 import image4 from "../../assets/4.webp";
 import image5 from "../../assets/5.webp";
 import image6 from "../../assets/6.webp";
+import image7 from "../../assets/7.webp";
+import image8 from "../../assets/8.webp";
+import image9 from "../../assets/9.webp";
+import image10 from "../../assets/10.webp";
+import image11 from "../../assets/11.webp";
+import image12 from "../../assets/12.webp";
+import image13 from "../../assets/13.webp";
+import image14 from "../../assets/14.webp";
+import image15 from "../../assets/15.webp";
+import image16 from "../../assets/16.webp";
+import image17 from "../../assets/17.webp";
+import image18 from "../../assets/18.webp";
+import image19 from "../../assets/19.webp";
+import image20 from "../../assets/20.webp";
+import image21 from "../../assets/21.webp";
+import image22 from "../../assets/22.webp";
 
-const imgContainer = [image1, image2, image3, image4, image5, image6];
+const imgContainer = [
+  image1,
+  image2,
+  image3,
+  image4,
+  image5,
+  image6,
+  image7,
+  image8,
+  image9,
+  image10,
+  image11,
+  image12,
+  image13,
+  image14,
+  image15,
+  image16,
+  image17,
+  image18,
+  image19,
+  image20,
+  image21,
+  image22,
+];
 
 const features = [
   {
@@ -52,6 +91,10 @@ const features = [
 ];
 
 export default function Home() {
+  const openLink = (url: string) => () => {
+    window.open(url, "_blank");
+  };
+
   return (
     <div className="project-page animation">
       <h1 className="project-title">Hanara Sushi - Expense & Income Manager</h1>
@@ -78,6 +121,31 @@ export default function Home() {
             Receipt scanning is currently under development, and additional
             features will be added in the future.
           </p>
+
+          <div className="project-download">
+            <div className="project-download-windows">
+              <h3>For Windows</h3>
+              <button
+                className="project-download-button"
+                onClick={openLink(
+                  "https://drive.google.com/file/d/1s5HcyyjwCWz-Idp4HVJTllm614ZxiND3/view?usp=sharing"
+                )}
+              >
+                Download
+              </button>
+            </div>
+            <div className="project-download-mac">
+              <h3>For Mac</h3>
+              <button
+                className="project-download-button"
+                onClick={openLink(
+                  "https://drive.google.com/file/d/1ekZxUJYQpvj7kbJLF61kiK9hCAgFgIdD/view?usp=sharing"
+                )}
+              >
+                Download
+              </button>
+            </div>
+          </div>
         </section>
 
         <section className="project-features">
