@@ -53,7 +53,7 @@ const features = [
 
 export default function Home() {
   return (
-    <div className="project-page">
+    <div className="project-page animation">
       <h1 className="project-title">Hanara Sushi - Expense & Income Manager</h1>
 
       <div className="project-content">
