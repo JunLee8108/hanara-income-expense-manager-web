@@ -60,14 +60,14 @@ export default function Home() {
         <section className="project-info">
           <h2>Project Description</h2>
           <p>
-            It is designed for efficient income and expenses management of
-            Hanara Sushi. Income and expenses data can be inserted, modified,
-            and deleted, and all necessary functions such as search, sorting,
-            and filtering are included. In the dashboard menu, data can be
-            graphed to make it easier for users to analyze and track income and
-            expenses efficiently. Additionally, in the Income Manager's report
-            tab, you can view the current net income by comparing the income and
-            expenses data.
+            This desktop application is designed for efficient income and
+            expenses management of Hanara Sushi. Income and expenses data can be
+            inserted, modified, and deleted, and all necessary functions such as
+            search, sorting, and filtering are included. In the dashboard menu,
+            data can be graphed to make it easier for users to analyze and track
+            income and expenses efficiently. Additionally, in the Income
+            Manager's report tab, you can view the current net income by
+            comparing the income and expenses data.
           </p>
           <p>
             Users can store and import the income and expenses data on their
@@ -85,7 +85,7 @@ export default function Home() {
           <ul>
             {features.map((content, index) => {
               return (
-                <li>
+                <li key={index}>
                   {index + 1}. {content.content}
                 </li>
               );
@@ -111,7 +111,7 @@ export default function Home() {
           >
             {imgContainer.map((content, index) => {
               return (
-                <SwiperSlide>
+                <SwiperSlide key={index}>
                   <img src={content} loading="lazy" alt="img" />
                 </SwiperSlide>
               );
