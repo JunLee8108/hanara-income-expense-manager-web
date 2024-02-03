@@ -84,7 +84,8 @@
 }
 
 .project-features li {
-  background-color: #e7eff9;
+  background-color: #333;
+  color: white;
   margin-bottom: 10px;
   padding: 15px;
   margin-bottom: 15px;
